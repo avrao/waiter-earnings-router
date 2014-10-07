@@ -1,0 +1,38 @@
+<section class="section1">
+<h1>Enter the Meal Details</h1><hr>
+	<form name="myForm"  ng-submit="submitted=true; submit();" required>
+
+		<div class="div1">
+		<label for="base-price">Base Meal Price: $ </label>
+		<input type="number" step="0.01" min="0" name="base-price" ng-model="baseprice" required>
+		</div>
+
+		<div class="div2">
+		<label for="tax-rate">Tax Rate: % </label>
+		<input type="number" min="0" name="tax-rate" ng-model="taxrate" required>
+		</div>
+
+		<div class="div2">
+		<label for="tip-percent">Tip Percent: % </label>
+		<input type="number" min="0" name="tip-percent" ng-model="tippercent" required>
+		</div>
+
+		<div class="div3">
+		<input class="submit" type="submit" ng-click="submit" value="Submit">
+		<input class="submit" type="submit" ng-click="submitted=false;cancel();" value="Cancel">
+		</div>
+	</form>
+</section>
+
+<section class="section2">
+<h1>Customer Charges</h1><hr>
+	<div class="div4">
+	<label ng-model="subtotal">Subtotal {{subtotal}}</label>
+	</div>
+	<div class="div5">
+	<label ng-model="tip">Tip {{tip}}</label>
+	</div><hr>
+	<div class="div5">
+	<label ng-model="total">Total {{total}}</label>
+	</div>
+</section>

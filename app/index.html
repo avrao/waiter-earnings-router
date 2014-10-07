@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="WERApp" ng-init="subtotal='0.00'; tip='0.00'; total='0.00'; mealcount='0'; tiptotal='0.00'; averagetip='0.00' ">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Waiter Earnings</title>
+</head>
+<body>
+<header>
+<nav><span class="mainnav">Waitstaff Calculator</span>
+	<div class="subnav">
+		<a href="#/">Home </a> |
+		<a href="#/new-meal"> New Meal </a> |
+		<a href="#/my-earnings"> My Earnings </a>
+	</div>
+</nav>
+</header>
+    <div ng-view></div>
+
+<footer style="margin-top:5%"><hr>
+</footer>   
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js "></script> 
+    <script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="./bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="./wer-app.js"></script>
+</body>
+</html>
